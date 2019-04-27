@@ -303,7 +303,7 @@
 					this.cantConnect();
 				} else {
 					pairs = pairs.sort((a,b) => {
-						const TOP_PAIRS = ['btc', 'eth', 'eos', 'trx', 'usdt'].map(x => x.toUpperCase());
+						const TOP_PAIRS = ['btc', 'eth', 'eos', 'trx', 'iotx', 'usdt'].map(x => x.toUpperCase());
 						return TOP_PAIRS.includes(b.symbol) ? 1 : TOP_PAIRS.includes(a.symbol) ? -1 : 0;
 					});
 					pairs = pairs.map(pair => {

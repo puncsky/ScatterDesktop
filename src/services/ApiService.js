@@ -191,6 +191,7 @@ export default class ApiService {
 				case Blockchains.EOSIO: payload.messages = await plugin.requestParser(payload, network); break;
 				case Blockchains.ETH:
 				case Blockchains.TRX:
+				case Blockchains.IOTX:
 					payload.messages = await plugin.requestParser(payload, payload.hasOwnProperty('abi') ? payload.abi : null); break;
 			}
 
